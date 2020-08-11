@@ -1,0 +1,107 @@
+@import "global";
+@import "fonts";
+
+//start header
+
+.header {
+    padding: 30px 0;
+    background-color: #4e306c;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+    }
+
+    &__search-form {
+        max-width: 270px;
+        margin: 0 auto;
+        position: relative;
+        input {
+            background: #fff;
+            color: #4e306c;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            height: 37px;
+            border: none;
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 30px;
+            &:focus {
+                border: none;
+            }
+            &::placeholder {
+                color: #4e306c;
+            }
+        }
+        button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            right: 10px;
+            top: 10px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box-cart {
+        margin-right: 70px;
+        margin-left: 50px;
+        position: relative;
+        img {
+            position: absolute;
+            top: -5px;
+            left: -50px;
+        }
+        &:hover {
+            color: #ffa5b0;
+
+        }
+    }
+
+    &__box-select {
+        margin-right: 35px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: -35px;
+        }
+        &:hover {
+            color: #ffa5b0;
+        }
+    }
+
+    &__btn {
+    }
+
+    &__btn-login {
+        &:hover{
+            color: #FFA5B0;
+        }
+    }
+
+    &__menu-btn {
+        display: block;
+        width: 40px;
+    }
+
+    &__menu-row {
+        background-color: #fff;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+//end header
+
+//end footer
+
+@import "media";
