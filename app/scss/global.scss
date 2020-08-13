@@ -42,6 +42,7 @@ a {
   display: inline-block;
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 ul {
@@ -66,6 +67,7 @@ li {
   background: #ffa5b0;
   border-radius: 5px;
   padding: 15px 45px;
+  cursor: pointer;
   &:hover {
     background: #ff8291;
     transition: all 0.5s ease;
