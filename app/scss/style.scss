@@ -191,16 +191,18 @@
         font-size: 14px;
         line-height: 19px;
     }
-
+    &__slider-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__slider-price {
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
-        margin-top: 10px;
-        &::after {
-            content: url(../images/icons/plus.svg);
-            margin-left: 10px;
-        }
+    }
+    &__slider-link{
+        font-size: 28px;
     }
 }
 .slick-dots {
@@ -215,7 +217,7 @@
         margin-right: 3px;
         & + li {
             margin-top: 10px;
-          }
+        }
         &.slick-active {
             button {
                 background-color: #fff;
