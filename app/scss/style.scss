@@ -4,7 +4,7 @@
 //start header
 
 .header {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #4e306c;
     &__inner {
         display: flex;
@@ -62,7 +62,6 @@
         }
         &:hover {
             color: #ffa5b0;
-
         }
     }
 
@@ -83,8 +82,8 @@
     }
 
     &__btn-login {
-        &:hover{
-            color: #FFA5B0;
+        &:hover {
+            color: #ffa5b0;
         }
     }
 
@@ -101,7 +100,141 @@
 }
 
 //end header
+//start main-screen
+.main-screen {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 92vh;
+        width: 50%;
+    }
+    &__box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        z-index: 2;
+    }
+    &__title {
+        text-transform: uppercase;
+        min-width: 480px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    &__title--bold {
+        font-weight: 900;
+    }
+
+    &__btn {
+    }
+    &__item--offer {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92));
+        }
+    }
+    &__item--slider {
+    }
+
+    &__slider-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 92vh;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                142.75deg,
+                rgba(255, 165, 176, 0.35) 25.82%,
+                rgba(27, 10, 75, 0.53) 74.35%
+            );
+        }
+    }
+
+    &__slider-offer {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        text-align: left;
+        z-index: 2;
+        color: #fff;
+    }
+
+    &__slider-title {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__slider-text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__slider-price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 10px;
+        &::after {
+            content: url(../images/icons/plus.svg);
+            margin-left: 10px;
+        }
+    }
+}
+.slick-dots {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    li {
+        display: inline-block;
+        margin-left: 4px;
+        margin-right: 3px;
+        & + li {
+            margin-top: 10px;
+          }
+        &.slick-active {
+            button {
+                background-color: #fff;
+            }
+        }
+        button {
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            font-size: 0;
+            width: 7px;
+            height: 30px;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+}
+
+//end main-screen
 //end footer
 
 @import "media";
