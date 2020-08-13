@@ -15,4 +15,13 @@ $(function () {
         nextArrow: '<button class="slick-arrow slick-next"><img src="../images/icons/arrow-right.svg" alt=""></button>',
         
     });
+    $('.about__slider').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-arrow slick-prew"><img src="../images/icons/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-arrow slick-next"><img src="../images/icons/arrow-right.svg" alt=""></button>',
+        
+    });
 });
