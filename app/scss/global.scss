@@ -66,8 +66,16 @@ li {
   background: #ffa5b0;
   border-radius: 5px;
   padding: 15px 45px;
-  &:hover{
-    background: #FF8291;
+  &:hover {
+    background: #ff8291;
     transition: all 0.5s ease;
   }
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #4e306c;
+  margin-bottom: 40px;
 }
