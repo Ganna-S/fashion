@@ -1,0 +1,109 @@
+@media (max-width: 1300px) {
+    .bestsellers__slider,
+    .about__slider{
+        text-align: center;
+        padding: 0 50px;
+    }
+    .bestsellers__slider-content {
+        text-align: left;
+    }
+    .slick-prew {
+        left: 35px;
+    }
+    .slick-next {
+        right: 35px;
+    }
+    .about__slider{
+        padding-top: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .main-screen__inner {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-screen__item{
+        min-width: 100%;
+        min-height: 460px;
+    }
+    .main-screen__item--offer{
+        margin-bottom: 30px;
+    }
+    .main-screen__slider{
+        margin: 0 90px;
+    }
+    .main-screen__slider-item{
+        min-height: 460px;
+    }
+    .main-screen__slider-offer {
+        bottom: 30px;
+        left: 25px;
+    }
+}
+@media (max-width: 960px) {
+    .header__search{
+        display: none;
+    }
+    .main-screen__item{
+        min-height: 360px;
+    }
+    .bestsellers{
+        padding: 100px 0;
+    }
+    .video {
+        padding: 30px 0 100px;
+    }
+    .video__img{
+        background-image: url(../images/video-bg-tab.jpg);
+    }
+    .about__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__inner-item {
+        margin-bottom: 45px;
+        min-width: 270px;
+    }
+}
+@media (max-width: 700px) {
+    .header__box{
+        display: none;
+    }
+}
+@media (max-width: 570px) {
+    .main-screen__title--bold {
+        font-size: 26px;
+    }
+    .main-screen__title {
+        min-width: 290px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .main-screen__slider {
+        margin: 0 15px;
+    }
+    .main-screen__slider-item {
+        min-height: 380px;
+    }
+}
+@media (max-width: 480px) {
+    .menu__list a {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 15px 25px 14px 0;
+    }
+    .menu__list{
+        align-items: start;
+        padding-top: 95px;
+    }
+    .bestsellers__slider {
+        padding: 0;
+    }
+    .video__img{
+        background-image: url(../images/video-bg-mob.jpg);
+    }
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

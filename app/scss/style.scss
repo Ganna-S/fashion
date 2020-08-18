@@ -53,6 +53,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 15px;
     }
 
     &__box-cart {
@@ -94,6 +95,7 @@
     &__menu-btn {
         display: block;
         width: 40px;
+        cursor: pointer;
     }
 
     &__menu-row {
@@ -101,6 +103,78 @@
         height: 4px;
         margin-bottom: 4px;
     }
+}
+
+.header__menu-row {
+    background-color: #fff;
+    height: 4px;
+    margin-bottom: 4px;
+}
+.header__box-menu {
+    background-color: #1B0A4B;;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 12;
+}
+.header__box-menu.active {
+    left: 0;
+}
+.container-menu {
+    position: relative;
+}
+.close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    cursor: pointer;
+}
+.close-btn::after,
+.close-btn::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transform-origin: left;
+}
+.close-btn::after {
+    transform: rotate(45deg);
+}
+.close-btn::before {
+    transform: rotate(-45deg);
+    bottom: 7px;
+}
+.menu__list li {
+    display: block;
+}
+.menu__list ul {
+    list-style: none;
+}
+.menu__list {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+.menu__list a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 30px 25px 14px 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.menu__list a:hover {
+    border-color: #fff;
+    color: #FFA5B0;
+    transform: scale(1.1);
+    margin-left: 27px;
 }
 
 //end header
@@ -261,6 +335,7 @@
     }
 
     &__slider-picture {
+
         background-repeat: no-repeat;
         background-position: center;
         max-width: 270px;
@@ -347,7 +422,7 @@
 .slick-prew {
     position: absolute;
     top: 47%;
-    left: -50px;
+    left: -40px;
 }
 .slick-next {
     position: absolute;
@@ -361,6 +436,7 @@
 .video {
     padding: 50px 0 120px;
     &__img {
+        background-image: url(../images/video-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -432,6 +508,7 @@
 
     &__slider {
         padding-top: 20px;
+        text-align: center;
     }
 
     &__slider-item {
@@ -750,7 +827,7 @@
         color: #ffa5b0;
         padding: 14px 50px;
         margin-bottom: 33px;
-        &:hover{
+        &:hover {
             background: #ff8291;
             color: #fff;
             transition: all 0.5s ease;
@@ -768,3 +845,5 @@
     }
 }
 //end footer
+
+@import "media";
